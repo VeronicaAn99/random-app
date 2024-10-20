@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "es5",
+    // Specify ECMAScript target version
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // Specify library files to include
+    "allowJs": true,
+    // Allow JavaScript files to be compiled
+    "skipLibCheck": true,
+    // Skip type checking of declaration files
+    "strict": true,
+    // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true,
+    // Ensure file name casing consistency
+    "noEmit": true,
+    // Disable emitting of output files
+    "esModuleInterop": true,
+    // Enable support for CommonJS modules
+    "module": "esnext",
+    // Specify module code generation
+    "moduleResolution": "node",
+    // Use Node.js style module resolution
+    "resolveJsonModule": true,
+    // Include support for importing .json files
+    "isolatedModules": true,
+    // Ensure that each file can be safely transpiled without relying on other files
+    "jsx": "preserve",
+    // Preserve JSX syntax, let Next.js handle transformation,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  // Files to include
+  "exclude": [
+    "node_modules"
+  ]
+}
